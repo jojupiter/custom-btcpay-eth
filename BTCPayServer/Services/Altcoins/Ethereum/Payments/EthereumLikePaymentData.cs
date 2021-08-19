@@ -29,12 +29,12 @@ namespace BTCPayServer.Services.Altcoins.Ethereum.Payments
         
           public static string GetPaymentETHId(string cryptoCode, string address, long amount,long BlockNumber)
         {
-            return $"{cryptoCode}#{address}#{amount}#{BlockNumber}";
+            return $"{cryptoCode}#{address}#FOFE{amount}#{BlockNumber}";
         }
         //Add by jojupiter
         public static string GetPaymentId(string cryptoCode, string address, long amount)
         {
-            return $"{cryptoCode}#{address}#{amount}";
+            return $"{cryptoCode}#{address}#FOFE{amount}";
         }
 
         public string[] GetSearchTerms()
